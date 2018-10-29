@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-breakdance": "^1.0.1",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-rename": "^1.4.0",
+    "jsdoc": "^3.5.5"
+  },
+  "scripts": {
+    "build": "rd /s/q docs & gulp normal && gulp tomd",
+    "start": "npm run build && echo. > \"docs/index.md\""
+  }
+}

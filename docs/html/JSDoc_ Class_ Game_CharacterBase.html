@@ -1,0 +1,2164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: Game_CharacterBase</title>
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+    <div id="main">
+        <h1 class="page-title">Class: Game_CharacterBase</h1>
+        <section>
+            <header>
+                <h2><span class="attribs"><span class="type-signature">(abstract) </span></span>Game_CharacterBase<span class="signature">()</span><span class="type-signature"></span></h2>
+            </header>
+            <article>
+                <div class="container-overview">
+                    <h4 class="name" id="Game_CharacterBase"><span class="type-signature">(abstract) </span>new Game_CharacterBase<span class="signature">()</span><span class="type-signature"></span></h4>
+                    <div class="description"> キャラクタに共通する画像処理を行うクラス。 <a href="Game_Character.html">Game_Character</a> のスーパークラス。 </div>
+                    <h5 class="subsection-title">Properties:</h5>
+                    <table class="props">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th class="last">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="name"><code>x</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last">[read-only]</td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>y</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last">[read-only]</td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_x</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_y</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_realX</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_realY</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_moveSpeed</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_moveFrequency</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_opacity</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_blendMode</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_direction</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_pattern</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_priorityType</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_tileId</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_characterName</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="String.html">String</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_characterIndex</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_isObjectCharacter</code></td>
+                                <td class="type">
+                                    <span class="param-type">Boolean</span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_walkAnime</code></td>
+                                <td class="type">
+                                    <span class="param-type">Boolean</span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_stepAnime</code></td>
+                                <td class="type">
+                                    <span class="param-type">Boolean</span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_directionFix</code></td>
+                                <td class="type">
+                                    <span class="param-type">Boolean</span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_through</code></td>
+                                <td class="type">
+                                    <span class="param-type">Boolean</span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_transparent</code></td>
+                                <td class="type">
+                                    <span class="param-type">Boolean</span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_bushDepth</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_animationId</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_balloonId</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_animationPlaying</code></td>
+                                <td class="type">
+                                    <span class="param-type">Boolean</span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_balloonPlaying</code></td>
+                                <td class="type">
+                                    <span class="param-type">Boolean</span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_animationCount</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_stopCount</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_jumpCount</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_jumpPeak</code></td>
+                                <td class="type">
+                                    <span class="param-type"><a href="Number.html">Number</a></span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                            <tr>
+                                <td class="name"><code>_movementSuccess</code></td>
+                                <td class="type">
+                                    <span class="param-type">Boolean</span>
+                                </td>
+                                <td class="description last"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <dl class="details">
+                    </dl>
+                </div>
+                <h3 class="subsection-title">Methods</h3>
+                <h4 class="name" id="animationId"><span class="type-signature"></span>animationId<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> アニメーションIDを返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="animationWait"><span class="type-signature"></span>animationWait<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> アニメーションの待ち時間を返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <div class="param-desc"> フレーム </div>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="balloonId"><span class="type-signature"></span>balloonId<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> フキダシアイコンIDを返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="blendMode"><span class="type-signature"></span>blendMode<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> [合成方法]を返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <div class="param-desc"> 0: 通常, 1: 加算, 2: 乗算, 3: スクリーン </div>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="bushDepth"><span class="type-signature"></span>bushDepth<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> [茂み]の深さを返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <div class="param-desc"> ピクセル </div>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="canPass"><span class="type-signature"></span>canPass<span class="signature">(x, y, d)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> 指定位置から指定向きへの通行が可能か。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>x</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>y</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>d</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">向き(テンキー対応)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="canPassDiagonally"><span class="type-signature"></span>canPassDiagonally<span class="signature">(x, y, horz, vert)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> 指定位置から斜め指定向きへの通行が可能か。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>x</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>y</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>horz</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">横方向(テンキー対応)</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>vert</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">縦方向(テンキー対応)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="characterIndex"><span class="type-signature"></span>characterIndex<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> キャラクタ画像の番号を返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="characterName"><span class="type-signature"></span>characterName<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="String.html">String</a>}</span></h4>
+                <div class="description"> キャラクタ画像のファイル名を返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="String.html">String</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="checkEventTriggerTouch"><span class="type-signature"></span>checkEventTriggerTouch<span class="signature">(x, y)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> 指定位置にあるイベントトリガを起動。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>x</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>y</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="checkEventTriggerTouchFront"><span class="type-signature"></span>checkEventTriggerTouchFront<span class="signature">(d)</span><span class="type-signature"></span></h4>
+                <div class="description"> 指定方向にあるイベントトリガを起動。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>d</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">向き(テンキー対応)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="checkStop"><span class="type-signature"></span>checkStop<span class="signature">(threshold)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> 停止状態が閾値を超えたか。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>threshold</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">停止カウントの閾値(フレーム)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="copyPosition"><span class="type-signature"></span>copyPosition<span class="signature">(character)</span><span class="type-signature"></span></h4>
+                <div class="description"> 指定キャラクタの位置を自身の位置にコピー。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>character</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Game_Player.html">Game_Player</a></span>
+                            </td>
+                            <td class="description last"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="direction"><span class="type-signature"></span>direction<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> 向きを返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <div class="param-desc"> 向き(テンキー対応) </div>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="distancePerFrame"><span class="type-signature"></span>distancePerFrame<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> フレーム毎の移動距離を返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="endAnimation"><span class="type-signature"></span>endAnimation<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> [アニメーション]表示を終了。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="endBalloon"><span class="type-signature"></span>endBalloon<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> [フキダシアイコン]表示を終了。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="hasStepAnime"><span class="type-signature"></span>hasStepAnime<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> [足踏みアニメ]するか。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="hasWalkAnime"><span class="type-signature"></span>hasWalkAnime<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> [歩行アニメ]するか。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="increaseSteps"><span class="type-signature"></span>increaseSteps<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> 歩き出す(歩数を増やす)。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="initialize"><span class="type-signature"></span>initialize<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> オブジェクト生成時の初期化。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="initMembers"><span class="type-signature"></span>initMembers<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> メンバ変数の初期化。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="isAnimationPlaying"><span class="type-signature"></span>isAnimationPlaying<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> [アニメーション]表示中か。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isBalloonPlaying"><span class="type-signature"></span>isBalloonPlaying<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> [フキダシアイコン]表示中か。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isCollidedWithCharacters"><span class="type-signature"></span>isCollidedWithCharacters<span class="signature">(x, y)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> 指定位置がキャラによって塞がれているか。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>x</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>y</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isCollidedWithEvents"><span class="type-signature"></span>isCollidedWithEvents<span class="signature">(x, y)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> 指定位置が[イベント]によって塞がれているか。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>x</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>y</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isCollidedWithVehicles"><span class="type-signature"></span>isCollidedWithVehicles<span class="signature">(x, y)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> 指定位置が[乗り物]によって塞がれているか。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>x</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>y</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isDashing"><span class="type-signature"></span>isDashing<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> 現在ダッシュ中か。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isDebugThrough"><span class="type-signature"></span>isDebugThrough<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> デバッグ用のすり抜け移動中か。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isDirectionFixed"><span class="type-signature"></span>isDirectionFixed<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> [向き固定]か。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isJumping"><span class="type-signature"></span>isJumping<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> ジャンプ中か。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isMapPassable"><span class="type-signature"></span>isMapPassable<span class="signature">(x, y, d)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> 指定位置から指定向きへのマップ通行が可能か。 キャラ・[イベント]による障害を考慮しない。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>x</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>y</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>d</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">向き(テンキー対応)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isMovementSucceeded"><span class="type-signature"></span>isMovementSucceeded<span class="signature">(x<span class="signature-attributes">opt</span>, y<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> 移動可能か。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Attributes</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>x</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="attributes"> &lt;optional><br>
+                            </td>
+                            <td class="description last"></td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>y</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="attributes"> &lt;optional><br>
+                            </td>
+                            <td class="description last"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isMoving"><span class="type-signature"></span>isMoving<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> 移動中(タイル毎の座標ではない)か。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isNearTheScreen"><span class="type-signature"></span>isNearTheScreen<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> 画面端に近いか。あるいは、スクロールを止める位置か。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <div class="param-desc"> } </div>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isNormalPriority"><span class="type-signature"></span>isNormalPriority<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> [プライオリティ]が[通常キャラと同じ]か。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isObjectCharacter"><span class="type-signature"></span>isObjectCharacter<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> キャラクタ用(characters フォルダ以下)の画像か。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isOnBush"><span class="type-signature"></span>isOnBush<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> [茂み]に乗っているか。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isOnLadder"><span class="type-signature"></span>isOnLadder<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> [梯子]に乗っているか。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isOriginalPattern"><span class="type-signature"></span>isOriginalPattern<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> オリジナルのパターンか。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isStopping"><span class="type-signature"></span>isStopping<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> 止まっている(タイル毎の座標にいる)か。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isThrough"><span class="type-signature"></span>isThrough<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> [すり抜け]状態か。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isTile"><span class="type-signature"></span>isTile<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> タイル用(tilesets フォルダ以下)の画像か。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="isTransparent"><span class="type-signature"></span>isTransparent<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> [透明]状態か。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="jump"><span class="type-signature"></span>jump<span class="signature">(xPlus, yPlus)</span><span class="type-signature"></span></h4>
+                <div class="description"> [ジャンプ]。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>xPlus</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">x方向の移動(タイル数)</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>yPlus</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">y方向の移動(タイル数)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="jumpHeight"><span class="type-signature"></span>jumpHeight<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> 現在のジャンプの高さを返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <div class="param-desc"> ピクセル </div>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="locate"><span class="type-signature"></span>locate<span class="signature">(x, y)</span><span class="type-signature"></span></h4>
+                <div class="description"> 現在のマップ内での[イベントの位置設定]。 <a href="Game_CharacterBase.html#setPosition">Game_CharacterBase#setPosition</a>と異なり、姿勢などを初期化。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>x</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>y</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="maxPattern"><span class="type-signature"></span>maxPattern<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> 最大パターン数を返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="moveDiagonally"><span class="type-signature"></span>moveDiagonally<span class="signature">(horz, vert)</span><span class="type-signature"></span></h4>
+                <div class="description"> 指定の方向に斜めに進む。 テンキーの対応に従って9で右上に進めそうだが、水平と垂直を別に指定する。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>horz</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">水平向き(4: 左, 6:右)</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>vert</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">垂直向き(2: 下, 8: 上)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="moveFrequency"><span class="type-signature"></span>moveFrequency<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> 移動[頻度]を返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <div class="param-desc"> 1: 最低, 2: 低, 3: 通常, 4: 高, 5: 最高 </div>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="moveSpeed"><span class="type-signature"></span>moveSpeed<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> 移動[速度]を返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <div class="param-desc"> 1: 1/8倍速, 2: 1/4倍速, 3: 1/2倍速, 4: 通常速, 5: 2倍速, 6: 4倍速 </div>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="moveStraight"><span class="type-signature"></span>moveStraight<span class="signature">(d)</span><span class="type-signature"></span></h4>
+                <div class="description"> 指定の向きへ[一歩前進]。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>d</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">向き(テンキー対応)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="opacity"><span class="type-signature"></span>opacity<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> [不透明度]を返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <div class="param-desc"> 0〜255 </div>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="pattern"><span class="type-signature"></span>pattern<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> 歩行パターンの番号を返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="pos"><span class="type-signature"></span>pos<span class="signature">(x, y)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> 指定位置にいるか。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>x</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last"></td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>y</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="posNt"><span class="type-signature"></span>posNt<span class="signature">(x, y)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
+                <div class="description"> 指定位置にいて、通行不可か。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>x</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last"></td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>y</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type">Boolean</span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="realMoveSpeed"><span class="type-signature"></span>realMoveSpeed<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> (ダッシュ状態も考慮して)現在の移動速度を返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="refreshBushDepth"><span class="type-signature"></span>refreshBushDepth<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> [茂み]の深さを更新。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="regionId"><span class="type-signature"></span>regionId<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> 乗っているリージョンIDを返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="requestAnimation"><span class="type-signature"></span>requestAnimation<span class="signature">(animationId)</span><span class="type-signature"></span></h4>
+                <div class="description"> アニメーションIDの設定。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>animationId</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="requestBalloon"><span class="type-signature"></span>requestBalloon<span class="signature">(balloonId)</span><span class="type-signature"></span></h4>
+                <div class="description"> フキダシアイコンIDを設定。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>balloonId</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="resetPattern"><span class="type-signature"></span>resetPattern<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> オリジナルのパターンにリセット。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="resetStopCount"><span class="type-signature"></span>resetStopCount<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> 停止カウンタをリセット。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="reverseDir"><span class="type-signature"></span>reverseDir<span class="signature">(d)</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> 指定向きの逆向きを返す。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>d</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">向き(テンキー対応)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <div class="param-desc"> 向き(テンキー対応) </div>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="screenX"><span class="type-signature"></span>screenX<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> 画面上の x座標を返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <div class="param-desc"> ピクセル </div>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="screenY"><span class="type-signature"></span>screenY<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> 画面上の y座標を返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <div class="param-desc"> ピクセル </div>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="screenZ"><span class="type-signature"></span>screenZ<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> 重なり位置を返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <div class="param-desc"> 1: 通常キャラの下, 3:通常キャラと同じ , 5: 通常キャラの上 </div>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="scrolledX"><span class="type-signature"></span>scrolledX<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <dl class="details">
+                    <dt class="tag-todo">To Do:</dt>
+                    <dd class="tag-todo">
+                        <ul>
+                            <li>この用語の意味が分かったら教えてください</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="scrolledY"><span class="type-signature"></span>scrolledY<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <dl class="details">
+                    <dt class="tag-todo">To Do:</dt>
+                    <dd class="tag-todo">
+                        <ul>
+                            <li>この用語の意味が分かったら教えてください</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="setBlendMode"><span class="type-signature"></span>setBlendMode<span class="signature">(blendMode)</span><span class="type-signature"></span></h4>
+                <div class="description"> [合成方法]の設定。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>blendMode</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">0: 通常, 1: 加算, 2: 乗算, 3: スクリーン</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="setDirection"><span class="type-signature"></span>setDirection<span class="signature">(d)</span><span class="type-signature"></span></h4>
+                <div class="description"> 向きの設定。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>d</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">向き(テンキー対応)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="setDirectionFix"><span class="type-signature"></span>setDirectionFix<span class="signature">(directionFix)</span><span class="type-signature"></span></h4>
+                <div class="description"> [向き固定]の設定。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>directionFix</code></td>
+                            <td class="type">
+                                <span class="param-type">Boolean</span>
+                            </td>
+                            <td class="description last"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="setImage"><span class="type-signature"></span>setImage<span class="signature">(characterName, characterIndex)</span><span class="type-signature"></span></h4>
+                <div class="description"> キャラクタ画像の設定(タイル画像と同時には設定できない)。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>characterName</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="String.html">String</a></span>
+                            </td>
+                            <td class="description last">ファイル名</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>characterIndex</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">番号</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="setMoveFrequency"><span class="type-signature"></span>setMoveFrequency<span class="signature">(moveFrequency)</span><span class="type-signature"></span></h4>
+                <div class="description"> 移動[頻度]の設定。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>moveFrequency</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">1: 最低, 2: 低, 3: 通常, 4: 高, 5: 最高</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="setMovementSuccess"><span class="type-signature"></span>setMovementSuccess<span class="signature">(success)</span><span class="type-signature"></span></h4>
+                <div class="description"> 移動可能かの設定。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>success</code></td>
+                            <td class="type">
+                                <span class="param-type">Boolean</span>
+                            </td>
+                            <td class="description last"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="setMoveSpeed"><span class="type-signature"></span>setMoveSpeed<span class="signature">(moveSpeed)</span><span class="type-signature"></span></h4>
+                <div class="description"> 移動[速度]の設定。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>moveSpeed</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">1: 1/8倍速, 2: 1/4倍速, 3: 1/2倍速, 4: 通常速, 5: 2倍速, 6: 4倍速</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="setOpacity"><span class="type-signature"></span>setOpacity<span class="signature">(opacity)</span><span class="type-signature"></span></h4>
+                <div class="description"> [不透明度]の設定。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>opacity</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">0〜255</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="setPattern"><span class="type-signature"></span>setPattern<span class="signature">(pattern)</span><span class="type-signature"></span></h4>
+                <div class="description"> 指定番号のパターンを設定。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>pattern</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="setPosition"><span class="type-signature"></span>setPosition<span class="signature">(x, y)</span><span class="type-signature"></span></h4>
+                <div class="description"> 現在のマップ内での[イベントの位置設定] </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>x</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><code>y</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイル数</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="setPriorityType"><span class="type-signature"></span>setPriorityType<span class="signature">(priorityType)</span><span class="type-signature"></span></h4>
+                <div class="description"> [プライオリティ]の設定。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>priorityType</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">0: 通常キャラの下, 1:通常キャラと同じ , 2: 通常キャラの上</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="setStepAnime"><span class="type-signature"></span>setStepAnime<span class="signature">(stepAnime)</span><span class="type-signature"></span></h4>
+                <div class="description"> [足踏みアニメ]するかの設定。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>stepAnime</code></td>
+                            <td class="type">
+                                <span class="param-type">Boolean</span>
+                            </td>
+                            <td class="description last"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="setThrough"><span class="type-signature"></span>setThrough<span class="signature">(through)</span><span class="type-signature"></span></h4>
+                <div class="description"> [すり抜け]状態の設定。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>through</code></td>
+                            <td class="type">
+                                <span class="param-type">Boolean</span>
+                            </td>
+                            <td class="description last"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="setTileImage"><span class="type-signature"></span>setTileImage<span class="signature">(tileId)</span><span class="type-signature"></span></h4>
+                <div class="description"> タイル画像の設定(キャラクタ画像と同時には設定できない)。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>tileId</code></td>
+                            <td class="type">
+                                <span class="param-type"><a href="Number.html">Number</a></span>
+                            </td>
+                            <td class="description last">タイルID</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="setTransparent"><span class="type-signature"></span>setTransparent<span class="signature">(transparent)</span><span class="type-signature"></span></h4>
+                <div class="description"> [透明]状態の設定。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>transparent</code></td>
+                            <td class="type">
+                                <span class="param-type">Boolean</span>
+                            </td>
+                            <td class="description last"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="setWalkAnime"><span class="type-signature"></span>setWalkAnime<span class="signature">(walkAnime)</span><span class="type-signature"></span></h4>
+                <div class="description"> [歩行アニメ]するかの設定。 </div>
+                <h5>Parameters:</h5>
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name"><code>walkAnime</code></td>
+                            <td class="type">
+                                <span class="param-type">Boolean</span>
+                            </td>
+                            <td class="description last"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="shiftY"><span class="type-signature"></span>shiftY<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> 縦方向へのシフト量を返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <div class="param-desc"> ピクセル </div>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="startAnimation"><span class="type-signature"></span>startAnimation<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> [アニメーション]表示開始。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="startBalloon"><span class="type-signature"></span>startBalloon<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> [フキダシアイコン]表示開始。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="straighten"><span class="type-signature"></span>straighten<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> キャラを(歩き・足踏みの途中でない)直立状態に。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="terrainTag"><span class="type-signature"></span>terrainTag<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> 乗っている[地形タグ]を返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="tileId"><span class="type-signature"></span>tileId<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Number.html">Number</a>}</span></h4>
+                <div class="description"> タイルIDを返す。 </div>
+                <dl class="details">
+                </dl>
+                <h5>Returns:</h5>
+                <dl>
+                    <dt> Type </dt>
+                    <dd>
+                        <span class="param-type"><a href="Number.html">Number</a></span>
+                    </dd>
+                </dl>
+                <h4 class="name" id="update"><span class="type-signature"></span>update<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> キャラをアップデート。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="updateAnimation"><span class="type-signature"></span>updateAnimation<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> アニメーションをアップデート。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="updateAnimationCount"><span class="type-signature"></span>updateAnimationCount<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> アニメーションのカウンタをアップデート。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="updateJump"><span class="type-signature"></span>updateJump<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> ジャンプ状態をアップデート。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="updateMove"><span class="type-signature"></span>updateMove<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> 移動状態をアップデート。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="updatePattern"><span class="type-signature"></span>updatePattern<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> パターンをアップデート。 </div>
+                <dl class="details">
+                </dl>
+                <h4 class="name" id="updateStop"><span class="type-signature"></span>updateStop<span class="signature">()</span><span class="type-signature"></span></h4>
+                <div class="description"> 停止状態をアップデート。 </div>
+                <dl class="details">
+                </dl>
+            </article>
+        </section>
+    </div>
+    <nav>
+        <h2><a href="index.html">Home</a></h2>
+        <h3>Classes</h3>
+        <ul>
+            <li><a href="Array.html">Array</a></li>
+            <li><a href="AudioManager.html">AudioManager</a></li>
+            <li><a href="BattleManager.html">BattleManager</a></li>
+            <li><a href="Bitmap.html">Bitmap</a></li>
+            <li><a href="CacheEntry.html">CacheEntry</a></li>
+            <li><a href="CacheMap.html">CacheMap</a></li>
+            <li><a href="ConfigManager.html">ConfigManager</a></li>
+            <li><a href="DataManager.html">DataManager</a></li>
+            <li><a href="Decrypter.html">Decrypter</a></li>
+            <li><a href="Game_Action.html">Game_Action</a></li>
+            <li><a href="Game_ActionResult.html">Game_ActionResult</a></li>
+            <li><a href="Game_Actor.html">Game_Actor</a></li>
+            <li><a href="Game_Actors.html">Game_Actors</a></li>
+            <li><a href="Game_Battler.html">Game_Battler</a></li>
+            <li><a href="Game_BattlerBase.html">Game_BattlerBase</a></li>
+            <li><a href="Game_Character.html">Game_Character</a></li>
+            <li><a href="Game_CharacterBase.html">Game_CharacterBase</a></li>
+            <li><a href="Game_CommonEvent.html">Game_CommonEvent</a></li>
+            <li><a href="Game_Enemy.html">Game_Enemy</a></li>
+            <li><a href="Game_Event.html">Game_Event</a></li>
+            <li><a href="Game_Follower.html">Game_Follower</a></li>
+            <li><a href="Game_Followers.html">Game_Followers</a></li>
+            <li><a href="Game_Interpreter.html">Game_Interpreter</a></li>
+            <li><a href="Game_Item.html">Game_Item</a></li>
+            <li><a href="Game_Map.html">Game_Map</a></li>
+            <li><a href="Game_Message.html">Game_Message</a></li>
+            <li><a href="Game_Party.html">Game_Party</a></li>
+            <li><a href="Game_Picture.html">Game_Picture</a></li>
+            <li><a href="Game_Player.html">Game_Player</a></li>
+            <li><a href="Game_Screen.html">Game_Screen</a></li>
+            <li><a href="Game_SelfSwitches.html">Game_SelfSwitches</a></li>
+            <li><a href="Game_Switches.html">Game_Switches</a></li>
+            <li><a href="Game_System.html">Game_System</a></li>
+            <li><a href="Game_Temp.html">Game_Temp</a></li>
+            <li><a href="Game_Timer.html">Game_Timer</a></li>
+            <li><a href="Game_Troop.html">Game_Troop</a></li>
+            <li><a href="Game_Unit.html">Game_Unit</a></li>
+            <li><a href="Game_Variables.html">Game_Variables</a></li>
+            <li><a href="Game_Vehicle.html">Game_Vehicle</a></li>
+            <li><a href="Graphics.html">Graphics</a></li>
+            <li><a href="Html5Audio.html">Html5Audio</a></li>
+            <li><a href="ImageCache.html">ImageCache</a></li>
+            <li><a href="ImageManager.html">ImageManager</a></li>
+            <li><a href="Input.html">Input</a></li>
+            <li><a href="JsonEx.html">JsonEx</a></li>
+            <li><a href="Math.html">Math</a></li>
+            <li><a href="MV.AudioParameters.html">AudioParameters</a></li>
+            <li><a href="MV.BattleLogMethod.html">BattleLogMethod</a></li>
+            <li><a href="MV.BattlerAnimation.html">BattlerAnimation</a></li>
+            <li><a href="MV.BattleRewards.html">BattleRewards</a></li>
+            <li><a href="MV.CommandItem.html">CommandItem</a></li>
+            <li><a href="MV.ConfigData.html">ConfigData</a></li>
+            <li><a href="MV.DatabaseFile.html">DatabaseFile</a></li>
+            <li><a href="MV.Matrix.html">Matrix</a></li>
+            <li><a href="MV.Motion.html">Motion</a></li>
+            <li><a href="MV.PluginSettings.html">PluginSettings</a></li>
+            <li><a href="MV.SaveContents.html">SaveContents</a></li>
+            <li><a href="MV.SaveFileInfo.html">SaveFileInfo</a></li>
+            <li><a href="MV.TextState.html">TextState</a></li>
+            <li><a href="MV.TouchInputEvents.html">TouchInputEvents</a></li>
+            <li><a href="Number.html">Number</a></li>
+            <li><a href="PluginManager.html">PluginManager</a></li>
+            <li><a href="Point.html">Point</a></li>
+            <li><a href="Rectangle.html">Rectangle</a></li>
+            <li><a href="RequestQueue.html">RequestQueue</a></li>
+            <li><a href="ResourceHandler.html">ResourceHandler</a></li>
+            <li><a href="RPG.Actor.html">Actor</a></li>
+            <li><a href="RPG.Animation.html">Animation</a></li>
+            <li><a href="RPG.Animation.Timing.html">Timing</a></li>
+            <li><a href="RPG.Armor.html">Armor</a></li>
+            <li><a href="RPG.AudioFile.html">AudioFile</a></li>
+            <li><a href="RPG.BaseItem.html">BaseItem</a></li>
+            <li><a href="RPG.BattleEventPage.html">BattleEventPage</a></li>
+            <li><a href="RPG.BattleEventPage.Conditions.html">Conditions</a></li>
+            <li><a href="RPG.Class.html">Class</a></li>
+            <li><a href="RPG.Class.Learning.html">Learning</a></li>
+            <li><a href="RPG.CommonEvent.html">CommonEvent</a></li>
+            <li><a href="RPG.Damage.html">Damage</a></li>
+            <li><a href="RPG.Effect.html">Effect</a></li>
+            <li><a href="RPG.Enemy.html">Enemy</a></li>
+            <li><a href="RPG.Enemy.Action.html">Action</a></li>
+            <li><a href="RPG.Enemy.DropItem.html">DropItem</a></li>
+            <li><a href="RPG.EquipItem.html">EquipItem</a></li>
+            <li><a href="RPG.Event.html">Event</a></li>
+            <li><a href="RPG.EventCommand.html">EventCommand</a></li>
+            <li><a href="RPG.EventPage.html">EventPage</a></li>
+            <li><a href="RPG.EventPage.Conditions.html">Conditions</a></li>
+            <li><a href="RPG.EventPage.Image.html">Image</a></li>
+            <li><a href="RPG.Item.html">Item</a></li>
+            <li><a href="RPG.Map.html">Map</a></li>
+            <li><a href="RPG.Map.Encounter.html">Encounter</a></li>
+            <li><a href="RPG.MapInfo.html">MapInfo</a></li>
+            <li><a href="RPG.MetaData.html">MetaData</a></li>
+            <li><a href="RPG.MoveCommand.html">MoveCommand</a></li>
+            <li><a href="RPG.MoveRoute.html">MoveRoute</a></li>
+            <li><a href="RPG.Skill.html">Skill</a></li>
+            <li><a href="RPG.State.html">State</a></li>
+            <li><a href="RPG.System.html">System</a></li>
+            <li><a href="RPG.System.AttackMotion.html">AttackMotion</a></li>
+            <li><a href="RPG.System.Terms.html">Terms</a></li>
+            <li><a href="RPG.System.TestBattler.html">TestBattler</a></li>
+            <li><a href="RPG.System.Vehicle.html">Vehicle</a></li>
+            <li><a href="RPG.Tileset.html">Tileset</a></li>
+            <li><a href="RPG.Trait.html">Trait</a></li>
+            <li><a href="RPG.Troop.html">Troop</a></li>
+            <li><a href="RPG.UsableItem.html">UsableItem</a></li>
+            <li><a href="RPG.Weapon.html">Weapon</a></li>
+            <li><a href="Scene_Base.html">Scene_Base</a></li>
+            <li><a href="Scene_Battle.html">Scene_Battle</a></li>
+            <li><a href="Scene_Boot.html">Scene_Boot</a></li>
+            <li><a href="Scene_Debug.html">Scene_Debug</a></li>
+            <li><a href="Scene_Equip.html">Scene_Equip</a></li>
+            <li><a href="Scene_File.html">Scene_File</a></li>
+            <li><a href="Scene_GameEnd.html">Scene_GameEnd</a></li>
+            <li><a href="Scene_Gameover.html">Scene_Gameover</a></li>
+            <li><a href="Scene_Item.html">Scene_Item</a></li>
+            <li><a href="Scene_ItemBase.html">Scene_ItemBase</a></li>
+            <li><a href="Scene_Load.html">Scene_Load</a></li>
+            <li><a href="Scene_Map.html">Scene_Map</a></li>
+            <li><a href="Scene_Menu.html">Scene_Menu</a></li>
+            <li><a href="Scene_MenuBase.html">Scene_MenuBase</a></li>
+            <li><a href="Scene_Name.html">Scene_Name</a></li>
+            <li><a href="Scene_Options.html">Scene_Options</a></li>
+            <li><a href="Scene_Save.html">Scene_Save</a></li>
+            <li><a href="Scene_Shop.html">Scene_Shop</a></li>
+            <li><a href="Scene_Skill.html">Scene_Skill</a></li>
+            <li><a href="Scene_Status.html">Scene_Status</a></li>
+            <li><a href="Scene_Title.html">Scene_Title</a></li>
+            <li><a href="SceneManager.html">SceneManager</a></li>
+            <li><a href="ScreenSprite.html">ScreenSprite</a></li>
+            <li><a href="ShaderTilemap.html">ShaderTilemap</a></li>
+            <li><a href="SoundManager.html">SoundManager</a></li>
+            <li><a href="Sprite.html">Sprite</a></li>
+            <li><a href="Sprite_Actor.html">Sprite_Actor</a></li>
+            <li><a href="Sprite_Animation.html">Sprite_Animation</a></li>
+            <li><a href="Sprite_Balloon.html">Sprite_Balloon</a></li>
+            <li><a href="Sprite_Base.html">Sprite_Base</a></li>
+            <li><a href="Sprite_Battler.html">Sprite_Battler</a></li>
+            <li><a href="Sprite_Button.html">Sprite_Button</a></li>
+            <li><a href="Sprite_Character.html">Sprite_Character</a></li>
+            <li><a href="Sprite_Damage.html">Sprite_Damage</a></li>
+            <li><a href="Sprite_Destination.html">Sprite_Destination</a></li>
+            <li><a href="Sprite_Enemy.html">Sprite_Enemy</a></li>
+            <li><a href="Sprite_Picture.html">Sprite_Picture</a></li>
+            <li><a href="Sprite_StateIcon.html">Sprite_StateIcon</a></li>
+            <li><a href="Sprite_StateOverlay.html">Sprite_StateOverlay</a></li>
+            <li><a href="Sprite_Timer.html">Sprite_Timer</a></li>
+            <li><a href="Sprite_Weapon.html">Sprite_Weapon</a></li>
+            <li><a href="Spriteset_Base.html">Spriteset_Base</a></li>
+            <li><a href="Spriteset_Battle.html">Spriteset_Battle</a></li>
+            <li><a href="Spriteset_Map.html">Spriteset_Map</a></li>
+            <li><a href="Stage.html">Stage</a></li>
+            <li><a href="StorageManager.html">StorageManager</a></li>
+            <li><a href="String.html">String</a></li>
+            <li><a href="TextManager.html">TextManager</a></li>
+            <li><a href="Tilemap.html">Tilemap</a></li>
+            <li><a href="TilingSprite.html">TilingSprite</a></li>
+            <li><a href="ToneFilter.html">ToneFilter</a></li>
+            <li><a href="ToneSprite.html">ToneSprite</a></li>
+            <li><a href="TouchInput.html">TouchInput</a></li>
+            <li><a href="Troop.Member.html">Member</a></li>
+            <li><a href="Utils.html">Utils</a></li>
+            <li><a href="Weather.html">Weather</a></li>
+            <li><a href="WebAudio.html">WebAudio</a></li>
+            <li><a href="Window.html">Window</a></li>
+            <li><a href="Window_ActorCommand.html">Window_ActorCommand</a></li>
+            <li><a href="Window_Base.html">Window_Base</a></li>
+            <li><a href="Window_BattleActor.html">Window_BattleActor</a></li>
+            <li><a href="Window_BattleEnemy.html">Window_BattleEnemy</a></li>
+            <li><a href="Window_BattleItem.html">Window_BattleItem</a></li>
+            <li><a href="Window_BattleLog.html">Window_BattleLog</a></li>
+            <li><a href="Window_BattleSkill.html">Window_BattleSkill</a></li>
+            <li><a href="Window_BattleStatus.html">Window_BattleStatus</a></li>
+            <li><a href="Window_ChoiceList.html">Window_ChoiceList</a></li>
+            <li><a href="Window_Command.html">Window_Command</a></li>
+            <li><a href="Window_DebugEdit.html">Window_DebugEdit</a></li>
+            <li><a href="Window_DebugRange.html">Window_DebugRange</a></li>
+            <li><a href="Window_EquipCommand.html">Window_EquipCommand</a></li>
+            <li><a href="Window_EquipItem.html">Window_EquipItem</a></li>
+            <li><a href="Window_EquipSlot.html">Window_EquipSlot</a></li>
+            <li><a href="Window_EquipStatus.html">Window_EquipStatus</a></li>
+            <li><a href="Window_EventItem.html">Window_EventItem</a></li>
+            <li><a href="Window_GameEnd.html">Window_GameEnd</a></li>
+            <li><a href="Window_Gold.html">Window_Gold</a></li>
+            <li><a href="Window_Help.html">Window_Help</a></li>
+            <li><a href="Window_HorzCommand.html">Window_HorzCommand</a></li>
+            <li><a href="Window_ItemCategory.html">Window_ItemCategory</a></li>
+            <li><a href="Window_ItemList.html">Window_ItemList</a></li>
+            <li><a href="Window_MapName.html">Window_MapName</a></li>
+            <li><a href="Window_MenuActor.html">Window_MenuActor</a></li>
+            <li><a href="Window_MenuCommand.html">Window_MenuCommand</a></li>
+            <li><a href="Window_MenuStatus.html">Window_MenuStatus</a></li>
+            <li><a href="Window_Message.html">Window_Message</a></li>
+            <li><a href="Window_NameEdit.html">Window_NameEdit</a></li>
+            <li><a href="Window_NameInput.html">Window_NameInput</a></li>
+            <li><a href="Window_NumberInput.html">Window_NumberInput</a></li>
+            <li><a href="Window_Options.html">Window_Options</a></li>
+            <li><a href="Window_PartyCommand.html">Window_PartyCommand</a></li>
+            <li><a href="Window_SavefileList.html">Window_SavefileList</a></li>
+            <li><a href="Window_ScrollText.html">Window_ScrollText</a></li>
+            <li><a href="Window_Selectable.html">Window_Selectable</a></li>
+            <li><a href="Window_ShopBuy.html">Window_ShopBuy</a></li>
+            <li><a href="Window_ShopCommand.html">Window_ShopCommand</a></li>
+            <li><a href="Window_ShopNumber.html">Window_ShopNumber</a></li>
+            <li><a href="Window_ShopSell.html">Window_ShopSell</a></li>
+            <li><a href="Window_ShopStatus.html">Window_ShopStatus</a></li>
+            <li><a href="Window_SkillList.html">Window_SkillList</a></li>
+            <li><a href="Window_SkillStatus.html">Window_SkillStatus</a></li>
+            <li><a href="Window_SkillType.html">Window_SkillType</a></li>
+            <li><a href="Window_Status.html">Window_Status</a></li>
+            <li><a href="Window_TitleCommand.html">Window_TitleCommand</a></li>
+            <li><a href="WindowLayer.html">WindowLayer</a></li>
+        </ul>
+        <h3>Namespaces</h3>
+        <ul>
+            <li><a href="MV.html">MV</a></li>
+            <li><a href="RPG.html">RPG</a></li>
+        </ul>
+        <h3>Global</h3>
+        <ul>
+            <li><a href="global.html#$dataActors">$dataActors</a></li>
+            <li><a href="global.html#$dataAnimations">$dataAnimations</a></li>
+            <li><a href="global.html#$dataArmors">$dataArmors</a></li>
+            <li><a href="global.html#$dataClasses">$dataClasses</a></li>
+            <li><a href="global.html#$dataCommonEvents">$dataCommonEvents</a></li>
+            <li><a href="global.html#$dataEnemies">$dataEnemies</a></li>
+            <li><a href="global.html#$dataItems">$dataItems</a></li>
+            <li><a href="global.html#$dataMap">$dataMap</a></li>
+            <li><a href="global.html#$dataMapInfos">$dataMapInfos</a></li>
+            <li><a href="global.html#$dataSkills">$dataSkills</a></li>
+            <li><a href="global.html#$dataStates">$dataStates</a></li>
+            <li><a href="global.html#$dataSystem">$dataSystem</a></li>
+            <li><a href="global.html#$dataTilesets">$dataTilesets</a></li>
+            <li><a href="global.html#$dataTroops">$dataTroops</a></li>
+            <li><a href="global.html#$dataWeapons">$dataWeapons</a></li>
+            <li><a href="global.html#$gameActors">$gameActors</a></li>
+            <li><a href="global.html#$gameMap">$gameMap</a></li>
+            <li><a href="global.html#$gameMessage">$gameMessage</a></li>
+            <li><a href="global.html#$gameParty">$gameParty</a></li>
+            <li><a href="global.html#$gamePlayer">$gamePlayer</a></li>
+            <li><a href="global.html#$gameScreen">$gameScreen</a></li>
+            <li><a href="global.html#$gameSelfSwitches">$gameSelfSwitches</a></li>
+            <li><a href="global.html#$gameSwitches">$gameSwitches</a></li>
+            <li><a href="global.html#$gameSystem">$gameSystem</a></li>
+            <li><a href="global.html#$gameTemp">$gameTemp</a></li>
+            <li><a href="global.html#$gameTimer">$gameTimer</a></li>
+            <li><a href="global.html#$gameTroop">$gameTroop</a></li>
+            <li><a href="global.html#$gameVariables">$gameVariables</a></li>
+            <li><a href="global.html#$plugins">$plugins</a></li>
+            <li><a href="global.html#$testEvent">$testEvent</a></li>
+        </ul>
+    </nav>
+    <br class="clear">
+    <footer> Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sat Oct 06 2018 05:06:50 GMT+0900 (JST) </footer>
+    <script>
+        prettyPrint();
+    </script>
+    <script src="scripts/linenumber.js"> </script>
+</body>
+
+</html>
